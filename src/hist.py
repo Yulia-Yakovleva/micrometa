@@ -8,7 +8,7 @@ sns.set(style='whitegrid')
 pth = '/home/yulia/micrometa/sina/'
 out = '/home/yulia/micrometa/figures/'
 
-files = ['ssu_interesting.fasta', 'lsu_interesting.fasta', 'euk_interesting.fasta']
+files = ['ssu_interesting.fasta', 'lsu_interesting.fasta', 'euk_interesting.fasta', 'arb-silva.de_2020-11-10_id911813_tax_silva.fasta']
 
 for f in files:
     lens = tuple(len(rec) for rec in SeqIO.parse(pth+f, 'fasta'))
@@ -22,4 +22,5 @@ for f in files:
     plt.title(f"Length distribution of founded {f[:3]} sequences")
     plt.savefig(f"{out}{f[:3]}_len_dist.pdf", format='pdf')
     plt.savefig(f"{out}{f[:3]}_len_dist.png", format='png', dpi=600)
+    plt.tight_layout()
     plt.show()
