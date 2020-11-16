@@ -20,7 +20,7 @@ for f in files:
     plt.ylabel('Number of sequences')
     plt.xlabel('Length')
     plt.title(f"Length distribution of founded {f[:3]} sequences")
+    plt.tight_layout()
     plt.savefig(f"{out}{f[:3]}_len_dist.pdf", format='pdf')
     plt.savefig(f"{out}{f[:3]}_len_dist.png", format='png', dpi=600)
-    plt.tight_layout()
     plt.show()
