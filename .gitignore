@@ -8,3 +8,5 @@ krona/ssu_sina_for_krona.out
 krona/ssu_sina.html.files
 raw/arb-silva.de_2020-11-10_id911813.tgz
 krona/whole_blast_out.tsv
+metadata/habitat_data.tsv
+metadata/metagenome.lst
