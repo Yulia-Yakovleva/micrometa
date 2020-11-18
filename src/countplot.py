@@ -8,7 +8,7 @@ height=6
 plt.figure(figsize=(width,height))
 
 df = pd.read_csv('/home/yulia/micrometa/metadata/habitat_data.tsv', sep='\t')
-df = df[df.habitat != 'metagenome']
+#df = df[df.habitat != 'metagenome']
 
 sns.countplot(x='type', hue='habitat', data=df, palette="Set3")
 plt.title('Founded sequences in different habitats')
