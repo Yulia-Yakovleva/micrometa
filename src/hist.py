@@ -8,7 +8,8 @@ sns.set(style='whitegrid')
 pth = '/home/yulia/micrometa/sina/'
 out = '/home/yulia/micrometa/figures/'
 
-files = ['ssu_interesting.fasta', 'lsu_interesting.fasta', 'euk_interesting.fasta', 'arb-silva.de_2020-11-10_id911813_tax_silva.fasta']
+#files = ['ssu_interesting.fasta', 'lsu_interesting.fasta', 'arb-silva.de_2020-11-10_id911813_tax_silva.fasta', 'pr2db_16S18S.fasta']
+files = ['pr2_version_4.12.0_18S_taxo_long.fasta']
 
 for f in files:
     lens = tuple(len(rec) for rec in SeqIO.parse(pth+f, 'fasta'))
